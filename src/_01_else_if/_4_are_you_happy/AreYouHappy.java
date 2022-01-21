@@ -7,7 +7,16 @@ public class AreYouHappy {
 		String happy = JOptionPane.showInputDialog("Are You Happy?");
 		
 		if (happy.equalsIgnoreCase("yes")) {
-			
+			JOptionPane.showMessageDialog(null, "Keep doing whatever you're doing.");
+		}
+		else if (happy.equalsIgnoreCase("no")) {
+			String happyQuestion = JOptionPane.showInputDialog("Do you want to be happy?");
+			if (happyQuestion.equalsIgnoreCase("yes")) {
+				JOptionPane.showMessageDialog(null, "Change something.");
+			}
+			else if (happyQuestion.equalsIgnoreCase("no")) {
+				JOptionPane.showMessageDialog(null, "Keep doing whatever you're doing.");
+			}
 		}
 		
 	}
